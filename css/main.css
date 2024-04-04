@@ -10,13 +10,12 @@
 body{
   background-position: center;
   background-size: cover;
-  background-attachement: fixed;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   height: 100vh;
 }
 #arya-body {
   background-image: url(../images/les.png);
-  
 }
 #zaph-body {
   background-image: url(../images/pozadi.png);
