@@ -7,26 +7,22 @@
   --lg: #80ed9970;
   --w: #ffffff;
 }
-#arya-body {
-  background-image: url(../images/les.png);
+body{
   background-position: center;
   background-size: cover;
+  background-attachement: fixed;
   background-repeat: no-repeat;
   height: 100vh;
+}
+#arya-body {
+  background-image: url(../images/les.png);
+  
 }
 #zaph-body {
   background-image: url(../images/pozadi.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
 }
 #home-body {
   background-image: url(../images/hlstr.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
 }
 html {
   color: var(--w);
