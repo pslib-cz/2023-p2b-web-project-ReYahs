@@ -11,6 +11,7 @@
   background-image: url(../images/les.jpg);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   height: 100vh;
 }
@@ -18,6 +19,7 @@
   background-image: url(../images/pozadi.jpg);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   height: 100vh;
 }
@@ -25,6 +27,7 @@
   background-image: url(../images/hlstr.jpg);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   height: 100vh;
 }
