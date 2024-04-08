@@ -7,21 +7,26 @@
   --lg: #80ed9970;
   --w: #ffffff;
 }
-body{
+#arya-body {
+  background-image: url(../images/les.jpg);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   height: 100vh;
 }
-#arya-body {
-  background-image: url(../images/les.png);
-}
 #zaph-body {
-  background-image: url(../images/pozadi.png);
+  background-image: url(../images/pozadi.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 #home-body {
-  background-image: url(../images/hlstr.png);
+  background-image: url(../images/hlstr.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 html {
   color: var(--w);
@@ -61,17 +66,17 @@ a {
   text-decoration: none;
   color: var(--w);
 }
-.li1 {
+.li__arya {
   background-color: var(--dg);
 }
-.li2 {
+.li__zaph {
   background-color: var(--svf);
 }
-.li3 {
+.li__galery {
   background-color: var(--lg);
   margin-bottom: 10px;
 }
-.li4 {
+.li__home {
   background-color: var(--neon);
 }
 table {
@@ -92,6 +97,16 @@ th, td {
 th img, td img{
   width: 250px;
 }
+main img{
+  width: 150px;
+}
+.grid__container{
+  display: grid;
+  grid-template-columns: 300;
+  justify-items: center;
+  align-items: center;
+  gap: 15px;
+}
 @media screen and (min-width: 1200px) {
   menu {
     flex-direction: row;
@@ -100,7 +115,7 @@ th img, td img{
   menu li {
     width: 200px;
   }
-  li3 {
+  .li__galery {
     margin-bottom: 0;
   }
   p {
@@ -110,12 +125,18 @@ th img, td img{
     display: flex;
     flex-direction: row-reverse;
     margin: 50px;
-    
-  }
-  .li4{
-    left: 10px;
   }
   th img, td img{
     width: 450px;
+  }
+  .grid__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 50px;
+  }
+  main img{
+    width: 500;
   }
 }
