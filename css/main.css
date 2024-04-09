@@ -69,17 +69,17 @@ a {
   text-decoration: none;
   color: var(--w);
 }
-.li__arya {
+#li-arya {
   background-color: var(--dg);
 }
-.li__zaph {
+#li-zaph {
   background-color: var(--svf);
 }
-.li__galery {
+#li-galery {
   background-color: var(--lg);
   margin-bottom: 10px;
 }
-.li__home {
+.li-home {
   background-color: var(--neon);
 }
 table {
@@ -103,14 +103,14 @@ th img, td img{
 main img{
   width: 250px;
 }
-.grid__container{
+.grid-galery{
   display: grid;
   grid-template-columns: 300;
   justify-items: center;
   align-items: center;
   gap: 15px;
 }
-.no__bullets{
+.ul--no__bullets{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -129,7 +129,7 @@ main img{
   p {
     font-size: large;
   }
-  .set__side{
+  .div--setside{
     display: flex;
     flex-direction: row-reverse;
     margin: 50px;
@@ -137,7 +137,7 @@ main img{
   th img, td img{
     width: 450px;
   }
-  .grid__container{
+  .grid-galery{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
     justify-items: center;
