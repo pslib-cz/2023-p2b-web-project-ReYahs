@@ -1,4 +1,4 @@
-¨<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="cs">
   <head>
     <meta charset="UTF-8" />
@@ -6,6 +6,10 @@
     <link rel="icon" type="image/x-icon" href="../images/favicon.webp" />
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/normalise.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css"
+    />
     <title>Galery</title>
   </head>
   <body>
@@ -14,12 +18,42 @@
     </header>
     <main>
       <div class="grid__container">
-        <img src="../images/Arya.webp" alt="Arya" />
-        <img src="../images/Zaphkiel.webp" alt="Zaphkiel" />
-        <img src="../images/hlstr.jpg" alt="Pozadí nazelenalého města" />
-        <img src="../images/pozadi.jpg" alt="pozadi fialového města" />
-        <img src="../images/les.jpg" alt="pozadí lesa" />
-        <img src="../images/favicon.webp" alt="favicon na stránku" />
+        <figure>
+          <a href="../images/Arya.webp">
+            <img src="../images/Arya.webp" alt="Arya" />
+            <div>Arya</div>
+          </a>
+        </figure>
+        <figure>
+          <a href="../images/Zaphkiel.webp">
+            <img src="../images/Zaphkiel.webp" alt="Zaphkiel" />
+            <div>Zaphkiel</div>
+          </a>
+        </figure>
+        <figure>
+          <a href="../images/hlstr.jpg">
+            <img src="../images/hlstr.jpg" alt="Pozadí nazelenalého města" />
+            <div>Pozadí nazelenalého města</div>
+          </a>
+        </figure>
+        <figure>
+          <a href="../images/pozadi.jpg">
+            <img src="../images/pozadi.jpg" alt="pozadi fialového města" />
+            <div>pozadi fialového města</div>
+          </a>
+        </figure>
+        <figure>
+          <a href="../images/les.jpg">
+            <img src="../images/les.jpg" alt="pozadí lesa" />
+            <div>pozadí lesa</div>
+          </a>
+        </figure>
+        <figure>
+          <a href="../images/favicon.webp">
+            <img src="../images/favicon.webp" alt="favicon na stránku" />
+            <div>favicon na stránku</div>
+          </a>
+        </figure>
       </div>
     </main>
     <footer>
@@ -29,5 +63,19 @@
         </menu>
       </nav>
     </footer>
+    <script type="module">
+      import lightgallery from "https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/+esm";
+      import lgThumbnail from "https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/+esm";
+      import lgPager from "https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/pager/+esm";
+      import lgZoom from "https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/+esm";
+      import lgAutoplay from "https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/autoplay/+esm";
+
+      lightgallery(document.querySelector(".thumbnails"), {
+        selector: document.querySelectorAll(".thumbnails a"),
+        plugins: [lgThumbnail, lgPager, lgZoom, lgAutoplay],
+        slideShowAutoplay: true,
+        slideShowInterval: 2000,
+      });
+    </script>
   </body>
 </html>
