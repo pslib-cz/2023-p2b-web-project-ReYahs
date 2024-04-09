@@ -110,6 +110,11 @@ main img{
   align-items: center;
   gap: 15px;
 }
+.no__bullets{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 @media screen and (min-width: 1200px) {
   menu {
     flex-direction: row;
