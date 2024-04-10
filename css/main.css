@@ -9,27 +9,27 @@
 }
 #arya-body {
   background-image: url(../images/les.jpg);
-  background-position: center;
-  background-size: cover;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  height: 100vh;
 }
 #zaph-body {
   background-image: url(../images/pozadi.jpg);
-  background-position: center;
-  background-size: cover;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  height: 100vh;
 }
 #home-body {
   background-image: url(../images/hlstr.jpg);
-  background-position: center;
-  background-size: cover;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  height: 100vh;
+}
+#form-body{
+  background-image: url(../images/library.jpg);
+  background-attachment: fixed;
+}
+#form-article{
+  margin: .4em;
+  margin-left: 2em;
+  margin-right: 2em;
+  display: flex;
+  justify-content: center;
+  background-color: var(--tmf);
 }
 html {
   color: var(--w);
@@ -115,6 +115,35 @@ main img{
   margin: 0;
   padding: 0;
 }
+form{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  align-items: center;
+}
+.li-home{
+  margin-top: 20px;
+}
+.form-container{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form :nth-child(5){
+  margin-top: 20px;
+}
+div > a > img{
+  width: 32px;
+  color: #ffffff;
+}
+.header-container{
+  display: flex;
+  justify-content: space-between;
+}
+.header-container > a{
+  margin-left: auto;
+}
 @media screen and (min-width: 1200px) {
   menu {
     flex-direction: row;
@@ -146,5 +175,10 @@ main img{
   }
   main img{
     width: 500px;
+  }
+  #form-article{
+    margin: .4em;
+    margin-left: 22em;
+    margin-right: 22em;
   }
 }
