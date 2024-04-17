@@ -10,18 +10,26 @@
 #arya-body {
   background-image: url(../images/les.jpg);
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100vh;
 }
 #zaph-body {
   background-image: url(../images/pozadi.jpg);
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100vh;
 }
 #home-body {
   background-image: url(../images/hlstr.jpg);
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100vh;
 }
 #form-body{
   background-image: url(../images/library.jpg);
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100vh;
 }
 #form-article{
   margin: .4em;
