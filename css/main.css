@@ -7,31 +7,24 @@
   --lg: #80ed9970;
   --w: #ffffff;
 }
-#arya-body {
+.body{
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.body--arya {
   background-image: url(../images/les.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
-#zaph-body {
+.body--zaph {
   background-image: url(../images/pozadi.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
-#home-body {
+.body--home {
   background-image: url(../images/hlstr.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
-#form-body{
+.body--form{
   background-image: url(../images/library.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
-#form-article{
+.form--article{
   margin: .4em;
   margin-left: 3em;
   margin-right: 3em;
