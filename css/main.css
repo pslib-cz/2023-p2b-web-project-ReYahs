@@ -12,28 +12,24 @@
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100vw;
 }
 #zaph-body {
   background-image: url(../images/pozadi.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100vw;
 }
 #home-body {
   background-image: url(../images/hlstr.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100vw;
 }
 #form-body{
   background-image: url(../images/library.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100vw;
 }
 #form-article{
   margin: .4em;
