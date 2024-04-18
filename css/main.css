@@ -59,7 +59,7 @@ header h1 {
 }
 .article__div {
   background-color: var(--neon);
-  margin: 20px;
+  margin: 0 20px;
 }
 .article__div > p {
   text-align: center;
